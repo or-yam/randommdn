@@ -1,882 +1,774 @@
 [
     {
+        "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects",
+        "text": "JavaScript standard built-in objects"
+    },
+    {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/globalThis",
-        "innerText": "globalThis"
+        "text": "globalThis"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Infinity",
-        "innerText": "Infinity"
+        "text": "Infinity"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN",
-        "innerText": "NaN"
+        "text": "NaN"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined",
-        "innerText": "undefined"
-    },
-    {
-        "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference#function_properties",
-        "innerText": "Function properties"
+        "text": "undefined"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/eval",
-        "innerText": "eval()"
+        "text": "eval()"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/isFinite",
-        "innerText": "isFinite()"
+        "text": "isFinite()"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/isNaN",
-        "innerText": "isNaN()"
+        "text": "isNaN()"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseFloat",
-        "innerText": "parseFloat()"
+        "text": "parseFloat()"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt",
-        "innerText": "parseInt()"
+        "text": "parseInt()"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/decodeURI",
-        "innerText": "decodeURI()"
+        "text": "decodeURI()"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/decodeURIComponent",
-        "innerText": "decodeURIComponent()"
+        "text": "decodeURIComponent()"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURI",
-        "innerText": "encodeURI()"
+        "text": "encodeURI()"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent",
-        "innerText": "encodeURIComponent()"
-    },
-    {
-        "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference#fundamental_objects",
-        "innerText": "Fundamental objects"
+        "text": "encodeURIComponent()"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
-        "innerText": "Object"
+        "text": "Object"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
-        "innerText": "Function"
+        "text": "Function"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
-        "innerText": "Boolean"
+        "text": "Boolean"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol",
-        "innerText": "Symbol"
-    },
-    {
-        "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference#error_objects",
-        "innerText": "Error objects"
+        "text": "Symbol"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error",
-        "innerText": "Error"
+        "text": "Error"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/EvalError",
-        "innerText": "EvalError"
+        "text": "EvalError"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RangeError",
-        "innerText": "RangeError"
+        "text": "RangeError"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError",
-        "innerText": "ReferenceError"
+        "text": "ReferenceError"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SyntaxError",
-        "innerText": "SyntaxError"
+        "text": "SyntaxError"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError",
-        "innerText": "TypeError"
+        "text": "TypeError"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/URIError",
-        "innerText": "URIError"
+        "text": "URIError"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/AggregateError",
-        "innerText": "AggregateError"
-    },
-    {
-        "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference#numbers_dates",
-        "innerText": "Numbers & dates"
+        "text": "AggregateError"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
-        "innerText": "Number"
+        "text": "Number"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt",
-        "innerText": "BigInt"
+        "text": "BigInt"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math",
-        "innerText": "Math"
+        "text": "Math"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date",
-        "innerText": "Date"
-    },
-    {
-        "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference#text_processing",
-        "innerText": "Text processing"
+        "text": "Date"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
-        "innerText": "String"
+        "text": "String"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp",
-        "innerText": "RegExp"
-    },
-    {
-        "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference#indexed_collections",
-        "innerText": "Indexed Collections"
+        "text": "RegExp"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
-        "innerText": "Array"
+        "text": "Array"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int8Array",
-        "innerText": "Int8Array"
+        "text": "Int8Array"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array",
-        "innerText": "Uint8Array"
+        "text": "Uint8Array"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8ClampedArray",
-        "innerText": "Uint8ClampedArray"
+        "text": "Uint8ClampedArray"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int16Array",
-        "innerText": "Int16Array"
+        "text": "Int16Array"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint16Array",
-        "innerText": "Uint16Array"
+        "text": "Uint16Array"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int32Array",
-        "innerText": "Int32Array"
+        "text": "Int32Array"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint32Array",
-        "innerText": "Uint32Array"
+        "text": "Uint32Array"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt64Array",
-        "innerText": "BigInt64Array"
+        "text": "BigInt64Array"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigUint64Array",
-        "innerText": "BigUint64Array"
+        "text": "BigUint64Array"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float32Array",
-        "innerText": "Float32Array"
+        "text": "Float32Array"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float64Array",
-        "innerText": "Float64Array"
-    },
-    {
-        "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference#keyed_collections",
-        "innerText": "Keyed collections"
+        "text": "Float64Array"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map",
-        "innerText": "Map"
+        "text": "Map"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set",
-        "innerText": "Set"
+        "text": "Set"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap",
-        "innerText": "WeakMap"
+        "text": "WeakMap"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet",
-        "innerText": "WeakSet"
-    },
-    {
-        "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference#structured_data",
-        "innerText": "Structured data"
+        "text": "WeakSet"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer",
-        "innerText": "ArrayBuffer"
+        "text": "ArrayBuffer"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SharedArrayBuffer",
-        "innerText": "SharedArrayBuffer"
+        "text": "SharedArrayBuffer"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView",
-        "innerText": "DataView"
+        "text": "DataView"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Atomics",
-        "innerText": "Atomics"
+        "text": "Atomics"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON",
-        "innerText": "JSON"
-    },
-    {
-        "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference#memory_management",
-        "innerText": "Memory management"
+        "text": "JSON"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakRef",
-        "innerText": "WeakRef"
+        "text": "WeakRef"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/FinalizationRegistry",
-        "innerText": "FinalizationRegistry"
-    },
-    {
-        "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference#control_abstraction",
-        "innerText": "Control abstraction"
+        "text": "FinalizationRegistry"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
-        "innerText": "Promise"
+        "text": "Promise"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/GeneratorFunction",
-        "innerText": "GeneratorFunction"
+        "text": "GeneratorFunction"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/AsyncGeneratorFunction",
-        "innerText": "AsyncGeneratorFunction"
+        "text": "AsyncGeneratorFunction"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator",
-        "innerText": "Generator"
+        "text": "Generator"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/AsyncGenerator",
-        "innerText": "AsyncGenerator"
+        "text": "AsyncGenerator"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/AsyncFunction",
-        "innerText": "AsyncFunction"
-    },
-    {
-        "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference#reflection",
-        "innerText": "Reflection"
+        "text": "AsyncFunction"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect",
-        "innerText": "Reflect"
+        "text": "Reflect"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy",
-        "innerText": "Proxy"
-    },
-    {
-        "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference#internationalization",
-        "innerText": "Internationalization"
+        "text": "Proxy"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl",
-        "innerText": "Intl"
+        "text": "Intl"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Collator",
-        "innerText": "Intl.Collator"
+        "text": "Intl.Collator"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat",
-        "innerText": "Intl.DateTimeFormat"
+        "text": "Intl.DateTimeFormat"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DisplayNames",
-        "innerText": "Intl.DisplayNames"
+        "text": "Intl.DisplayNames"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/ListFormat",
-        "innerText": "Intl.ListFormat"
+        "text": "Intl.ListFormat"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale",
-        "innerText": "Intl.Locale"
+        "text": "Intl.Locale"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat",
-        "innerText": "Intl.NumberFormat"
+        "text": "Intl.NumberFormat"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/PluralRules",
-        "innerText": "Intl.PluralRules"
+        "text": "Intl.PluralRules"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/RelativeTimeFormat",
-        "innerText": "Intl.RelativeTimeFormat"
+        "text": "Intl.RelativeTimeFormat"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Segmenter",
-        "innerText": "Intl.Segmenter"
-    },
-    {
-        "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference#statements",
-        "innerText": "Statements"
+        "text": "Intl.Segmenter"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements",
-        "innerText": "JavaScript statements and declarations"
-    },
-    {
-        "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference#control_flow",
-        "innerText": "Control flow"
+        "text": "JavaScript statements and declarations"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/block",
-        "innerText": "Block"
+        "text": "Block"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/Empty",
-        "innerText": "Empty statement"
+        "text": "Empty statement"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/break",
-        "innerText": "break"
+        "text": "break"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/continue",
-        "innerText": "continue"
+        "text": "continue"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else",
-        "innerText": "if...else"
+        "text": "if...else"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch",
-        "innerText": "switch"
+        "text": "switch"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/throw",
-        "innerText": "throw"
+        "text": "throw"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch",
-        "innerText": "try...catch"
-    },
-    {
-        "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference#declarations",
-        "innerText": "Declarations"
+        "text": "try...catch"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var",
-        "innerText": "var"
+        "text": "var"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let",
-        "innerText": "let"
+        "text": "let"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const",
-        "innerText": "const"
-    },
-    {
-        "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference#functions_and_classes",
-        "innerText": "Functions and classes"
+        "text": "const"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function",
-        "innerText": "function"
+        "text": "function"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*",
-        "innerText": "function*"
+        "text": "function*"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function",
-        "innerText": "async function"
+        "text": "async function"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function*",
-        "innerText": "async function*"
+        "text": "async function*"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/return",
-        "innerText": "return"
+        "text": "return"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/class",
-        "innerText": "class"
-    },
-    {
-        "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference#iterations",
-        "innerText": "Iterations"
+        "text": "class"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/do...while",
-        "innerText": "do...while"
+        "text": "do...while"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for",
-        "innerText": "for"
+        "text": "for"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in",
-        "innerText": "for...in"
+        "text": "for...in"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of",
-        "innerText": "for...of"
+        "text": "for...of"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for-await...of",
-        "innerText": "for await...of"
+        "text": "for await...of"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/while",
-        "innerText": "while"
-    },
-    {
-        "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference#other",
-        "innerText": "Other"
+        "text": "while"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/debugger",
-        "innerText": "debugger"
+        "text": "debugger"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export",
-        "innerText": "export"
+        "text": "export"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import",
-        "innerText": "import"
+        "text": "import"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/label",
-        "innerText": "label"
+        "text": "label"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/with",
-        "innerText": "with"
-    },
-    {
-        "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference#expressions_and_operators",
-        "innerText": "Expressions and operators"
+        "text": "with"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators",
-        "innerText": "JavaScript expressions and operators"
-    },
-    {
-        "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference#primary_expressions",
-        "innerText": "Primary expressions"
+        "text": "JavaScript expressions and operators"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this",
-        "innerText": "this"
+        "text": "this"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/function",
-        "innerText": "function"
+        "text": "function"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/class",
-        "innerText": "class"
+        "text": "class"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/function*",
-        "innerText": "function*"
+        "text": "function*"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/yield",
-        "innerText": "yield"
+        "text": "yield"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/yield*",
-        "innerText": "yield*"
+        "text": "yield*"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/async_function",
-        "innerText": "async function"
+        "text": "async function"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/async_function*",
-        "innerText": "async function*"
+        "text": "async function*"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/await",
-        "innerText": "await"
+        "text": "await"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
-        "innerText": "[]"
+        "text": "[]"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer",
-        "innerText": "{}"
+        "text": "{}"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp",
-        "innerText": "/ab+c/i"
+        "text": "/ab+c/i"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Grouping",
-        "innerText": "( )"
+        "text": "( )"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/null",
-        "innerText": "null"
-    },
-    {
-        "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference#left-hand-side_expressions",
-        "innerText": "Left-hand-side expressions"
+        "text": "null"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Property_Accessors",
-        "innerText": "Property accessors"
+        "text": "Property accessors"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining",
-        "innerText": "?. (Optional chaining)"
+        "text": "?. (Optional chaining)"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/new",
-        "innerText": "new"
+        "text": "new"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/new.target",
-        "innerText": "new.target"
+        "text": "new.target"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/import.meta",
-        "innerText": "import.meta"
+        "text": "import.meta"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/super",
-        "innerText": "super"
+        "text": "super"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax",
-        "innerText": "...obj"
-    },
-    {
-        "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference#increment_decrement",
-        "innerText": "Increment & decrement"
+        "text": "...obj"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Increment",
-        "innerText": "A++"
+        "text": "A++"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Decrement",
-        "innerText": "A--"
+        "text": "A--"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Increment",
-        "innerText": "++A"
+        "text": "++A"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Decrement",
-        "innerText": "--A"
-    },
-    {
-        "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference#unary_operators",
-        "innerText": "Unary operators"
+        "text": "--A"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/delete",
-        "innerText": "delete"
+        "text": "delete"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/void",
-        "innerText": "void"
+        "text": "void"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof",
-        "innerText": "typeof"
+        "text": "typeof"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Unary_plus",
-        "innerText": "+"
+        "text": "+"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Unary_negation",
-        "innerText": "-"
+        "text": "-"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_NOT",
-        "innerText": "~"
+        "text": "~"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_NOT",
-        "innerText": "!"
-    },
-    {
-        "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference#arithmetic_operators",
-        "innerText": "Arithmetic operators"
+        "text": "!"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Addition",
-        "innerText": "+"
+        "text": "+"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Subtraction",
-        "innerText": "-"
+        "text": "-"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Division",
-        "innerText": "/"
+        "text": "/"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Multiplication",
-        "innerText": "*"
+        "text": "*"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Remainder",
-        "innerText": "%"
+        "text": "%"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Exponentiation",
-        "innerText": "**"
-    },
-    {
-        "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference#relational_operators",
-        "innerText": "Relational operators"
+        "text": "**"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/in",
-        "innerText": "in"
+        "text": "in"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/instanceof",
-        "innerText": "instanceof"
+        "text": "instanceof"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Less_than",
-        "innerText": "<"
+        "text": "<"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Greater_than",
-        "innerText": ">"
+        "text": ">"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Less_than_or_equal",
-        "innerText": "<="
+        "text": "<="
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Greater_than_or_equal",
-        "innerText": ">="
-    },
-    {
-        "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference#equality_operators",
-        "innerText": "Equality operators"
+        "text": ">="
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Equality",
-        "innerText": "=="
+        "text": "=="
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Inequality",
-        "innerText": "!="
+        "text": "!="
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Strict_equality",
-        "innerText": "==="
+        "text": "==="
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Strict_inequality",
-        "innerText": "!=="
-    },
-    {
-        "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference#bitwise_shift_operators",
-        "innerText": "Bitwise shift operators"
+        "text": "!=="
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Left_shift",
-        "innerText": "<<"
+        "text": "<<"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Right_shift",
-        "innerText": ">>"
+        "text": ">>"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Unsigned_right_shift",
-        "innerText": ">>>"
-    },
-    {
-        "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference#binary_bitwise_operators",
-        "innerText": "Binary bitwise operators"
+        "text": ">>>"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_AND",
-        "innerText": "&"
+        "text": "&"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_OR",
-        "innerText": "|"
+        "text": "|"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_XOR",
-        "innerText": "^"
-    },
-    {
-        "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference#binary_logical_operators",
-        "innerText": "Binary logical operators"
+        "text": "^"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_AND",
-        "innerText": "&&"
+        "text": "&&"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_OR",
-        "innerText": "||"
+        "text": "||"
     },
     {
-        "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing_operator",
-        "innerText": "??"
-    },
-    {
-        "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference#conditional_ternary_operator",
-        "innerText": "Conditional (ternary) operator"
+        "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing",
+        "text": "??"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator",
-        "innerText": "(condition ? ifTrue : ifFalse)"
-    },
-    {
-        "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference#assignment_operators",
-        "innerText": "Assignment operators"
+        "text": "(condition ? ifTrue : ifFalse)"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Assignment",
-        "innerText": "="
+        "text": "="
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Multiplication_assignment",
-        "innerText": "*="
+        "text": "*="
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Exponentiation_assignment",
-        "innerText": "**="
+        "text": "**="
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Division_assignment",
-        "innerText": "/="
+        "text": "/="
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Remainder_assignment",
-        "innerText": "%="
+        "text": "%="
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Addition_assignment",
-        "innerText": "+="
+        "text": "+="
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Subtraction_assignment",
-        "innerText": "-="
+        "text": "-="
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Left_shift_assignment",
-        "innerText": "<<="
+        "text": "<<="
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Right_shift_assignment",
-        "innerText": ">>="
+        "text": ">>="
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Unsigned_right_shift_assignment",
-        "innerText": ">>>="
+        "text": ">>>="
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_AND_assignment",
-        "innerText": "&="
+        "text": "&="
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_XOR_assignment",
-        "innerText": "^="
+        "text": "^="
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_OR_assignment",
-        "innerText": "|="
+        "text": "|="
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_AND_assignment",
-        "innerText": "&&="
+        "text": "&&="
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_OR_assignment",
-        "innerText": "||="
+        "text": "||="
     },
     {
-        "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_nullish_assignment",
-        "innerText": "??="
-    },
-    {
-        "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment",
-        "innerText": "[a, b] = arr"
+        "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing_assignment",
+        "text": "??="
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment",
-        "innerText": "{ a, b } = obj"
+        "text": "[a, b] = arr"
     },
     {
-        "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference#comma_operators",
-        "innerText": "Comma operators"
+        "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment",
+        "text": "{ a, b } = obj"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comma_Operator",
-        "innerText": ","
-    },
-    {
-        "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference#functions",
-        "innerText": "Functions"
+        "text": ","
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions",
-        "innerText": "JavaScript functions."
+        "text": "JavaScript functions."
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions",
-        "innerText": "Arrow Functions"
+        "text": "Arrow Functions"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Default_parameters",
-        "innerText": "Default parameters"
+        "text": "Default parameters"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters",
-        "innerText": "Rest parameters"
+        "text": "Rest parameters"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments",
-        "innerText": "arguments"
+        "text": "arguments"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Method_definitions",
-        "innerText": "Method definitions"
+        "text": "Method definitions"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/get",
-        "innerText": "getter"
+        "text": "getter"
     },
     {
         "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/set",
-        "innerText": "setter"
+        "text": "setter"
+    },
+    {
+        "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes",
+        "text": "JavaScript classes."
+    },
+    {
+        "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar",
+        "text": "Lexical grammar"
+    },
+    {
+        "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures",
+        "text": "Data types and data structures"
+    },
+    {
+        "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode",
+        "text": "Strict mode"
+    },
+    {
+        "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Deprecated_and_obsolete_features",
+        "text": "Deprecated features"
     }
 ]
