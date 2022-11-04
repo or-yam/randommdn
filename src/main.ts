@@ -14,7 +14,6 @@ const getRandomLink = async (): Promise<LinkMetaData> => {
   }
 };
 
-const appElement = document.getElementById('app')! as HTMLDivElement;
 const buttonElement = document.getElementById('btn')! as HTMLButtonElement;
 const linkElement = document.getElementById('link')! as HTMLAnchorElement;
 const descriptionElement = document.getElementById('description')! as HTMLParagraphElement;
