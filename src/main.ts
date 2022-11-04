@@ -1,3 +1,4 @@
+import axios from 'axios';
 import { getLinkMetaData, getSitemapLinks } from '../scraper/sitemap-scraper';
 import { LinkMetaData } from '../scraper/types';
 import storedData from './data.json';
@@ -6,6 +7,8 @@ import './style.css';
 const appElement = document.getElementById('app')!;
 
 const getRandomLink = async () => {
+  const funcTest = (await axios.get('/api/getRandomLink')).data;
+  console.log(funcTest);
   const sitemapLinks = await getSitemapLinks();
   if (!sitemapLinks.length) {
     const index = Math.floor(Math.random() * storedData.length);
