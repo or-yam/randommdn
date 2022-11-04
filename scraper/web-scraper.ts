@@ -1,10 +1,11 @@
-import fs from 'fs';
 import playwright from 'playwright';
+import { saveToJsonFile } from './save-file';
+import { LinkMetaData } from './types';
 
 const BASE_URL = 'https://developer.mozilla.org';
 
-const scrapeLinksData = async (): Promise<{ href: string; text: string }[]> => {
-  const data: { href: string; text: string }[] = [];
+const scrapeLinksData = async (): Promise<LinkMetaData[]> => {
+  const data: LinkMetaData[] = [];
   const browser = await playwright['chromium'].launch();
   const context = await browser.newContext();
   const page = await context.newPage();
@@ -21,7 +22,7 @@ const scrapeLinksData = async (): Promise<{ href: string; text: string }[]> => {
         continue;
       }
       if (href[0] !== '#') {
-        data.push({ href: `${BASE_URL}${href}`, text });
+        data.push({ url: `${BASE_URL}${href}`, title: text, description: '', tag: '' });
       }
     }
   }
@@ -30,13 +31,7 @@ const scrapeLinksData = async (): Promise<{ href: string; text: string }[]> => {
   return data;
 };
 
-const saveToJsonFile = (dataObject: any[] | {}, fileName: string) => {
-  const asJson = JSON.stringify(dataObject, null, 2);
-  fs.writeFile(`${fileName}.json`, asJson, error => {
-    if (error) throw error;
-    console.log('Data written to file');
-  });
+export default async () => {
+  const linksData = await scrapeLinksData();
+  saveToJsonFile(linksData, 'mdn-links');
 };
-
-const linksData = await scrapeLinksData();
-saveToJsonFile(linksData, 'mdn-links');
