@@ -1,21 +1,16 @@
 import axios from 'axios';
-import { getLinkMetaData, getSitemapLinks } from '../scraper/sitemap-scraper';
 import { LinkMetaData } from '../scraper/types';
 import storedData from './data.json';
 import './style.css';
 
 const appElement = document.getElementById('app')!;
 
-const getRandomLink = async () => {
-  const funcTest = (await axios.get('/api/getRandomLink')).data;
-  console.log(funcTest);
-  const sitemapLinks = await getSitemapLinks();
-  if (!sitemapLinks.length) {
+const getRandomLink = async (): Promise<LinkMetaData> => {
+  const linkMetaData = (await axios.get<LinkMetaData>('/api/getRandomLink')).data;
+  if (!linkMetaData.url) {
     const index = Math.floor(Math.random() * storedData.length);
     return storedData[index];
   }
-  const randomLink = sitemapLinks[Math.floor(Math.random() * sitemapLinks.length)];
-  const linkMetaData = await getLinkMetaData(randomLink);
   return linkMetaData;
 };
 
