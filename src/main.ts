@@ -18,8 +18,13 @@ const buttonElement = document.getElementById('btn')! as HTMLButtonElement;
 const linkElement = document.getElementById('link')! as HTMLAnchorElement;
 const descriptionElement = document.getElementById('description')! as HTMLParagraphElement;
 const tagElement = document.getElementById('tag')! as HTMLHeadingElement;
+const resultsContainer = document.getElementById('results')! as HTMLDivElement;
+const loaderElement = document.getElementById('loader')! as HTMLDivElement;
 
 const createRandomLink = async () => {
+  resultsContainer.style.display = 'none';
+  loaderElement.style.display = 'block';
+
   const linkContent: LinkMetaData = await getRandomLink();
 
   linkElement.href = linkContent.url || 'https://developer.mozilla.org';
@@ -27,9 +32,9 @@ const createRandomLink = async () => {
   descriptionElement.innerText =
     linkContent.description ||
     'The MDN Web Docs site provides information about Open Web technologies including HTML, CSS, and APIs for both Web sites and progressive web apps.';
-  tagElement.innerText = `-${linkContent.tag}-` || '-WEB-';
-
-  linkElement.style.display = 'block';
+  tagElement.innerText = linkContent.tag ? `-${linkContent.tag}-` : '-WEB-';
+  resultsContainer.style.display = 'block';
+  loaderElement.style.display = 'none';
 };
 
 buttonElement.onclick = createRandomLink;
