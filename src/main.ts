@@ -3,31 +3,32 @@ import { LinkMetaData } from '../scraper/types';
 import storedData from './data.json';
 import './style.css';
 
-const appElement = document.getElementById('app')!;
-
 const getRandomLink = async (): Promise<LinkMetaData> => {
-  const linkMetaData = (await axios.get<LinkMetaData>('/api/getRandomLink')).data;
-  if (!linkMetaData.url) {
+  try {
+    const linkMetaData = (await axios.get<LinkMetaData>('/api/getRandomLink')).data;
+    return linkMetaData;
+  } catch (error) {
+    console.log('Data from stored json', error);
     const index = Math.floor(Math.random() * storedData.length);
     return storedData[index];
   }
-  return linkMetaData;
 };
+
+const appElement = document.getElementById('app')! as HTMLDivElement;
+const buttonElement = document.getElementById('btn')! as HTMLButtonElement;
+const linkElement = document.getElementById('link')! as HTMLAnchorElement;
+const descriptionElement = document.getElementById('description')! as HTMLParagraphElement;
+const tagElement = document.getElementById('tag')! as HTMLHeadingElement;
 
 const createRandomLink = async () => {
-  const prevLink = document.getElementById('link');
-  if (prevLink) {
-    prevLink.remove();
-  }
   const linkContent: LinkMetaData = await getRandomLink();
-  const link = document.createElement('a');
-  link.id = 'link';
-  link.target = '_blank';
-  link.rel = 'noreferrer';
-  link.href = linkContent.url;
-  link.innerText = linkContent.title;
-  appElement.append(link);
+
+  linkElement.href = linkContent.url;
+  linkElement.innerText = linkContent.title;
+  descriptionElement.innerText = linkContent.description;
+  tagElement.innerText = linkContent.tag;
+
+  linkElement.style.display = 'block';
 };
 
-const button = document.getElementById('btn')!;
-button.onclick = createRandomLink;
+buttonElement.onclick = createRandomLink;
