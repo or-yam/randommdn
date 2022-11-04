@@ -22,10 +22,12 @@ const tagElement = document.getElementById('tag')! as HTMLHeadingElement;
 const createRandomLink = async () => {
   const linkContent: LinkMetaData = await getRandomLink();
 
-  linkElement.href = linkContent.url;
-  linkElement.innerText = linkContent.title;
-  descriptionElement.innerText = linkContent.description;
-  tagElement.innerText = linkContent.tag;
+  linkElement.href = linkContent.url || 'https://developer.mozilla.org';
+  linkElement.innerText = linkContent.title || 'MDN Web Docs';
+  descriptionElement.innerText =
+    linkContent.description ||
+    'The MDN Web Docs site provides information about Open Web technologies including HTML, CSS, and APIs for both Web sites and progressive web apps.';
+  tagElement.innerText = linkContent.tag || 'WEB';
 
   linkElement.style.display = 'block';
 };
