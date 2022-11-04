@@ -99,3 +99,9 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+img {
+  height: 10rem;
+  justify-self: center;
+  border-radius: 20px;
+}
