@@ -27,7 +27,7 @@ const createRandomLink = async () => {
   descriptionElement.innerText =
     linkContent.description ||
     'The MDN Web Docs site provides information about Open Web technologies including HTML, CSS, and APIs for both Web sites and progressive web apps.';
-  tagElement.innerText = linkContent.tag || 'WEB';
+  tagElement.innerText = `-${linkContent.tag}-` || '-WEB-';
 
   linkElement.style.display = 'block';
 };
