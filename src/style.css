@@ -44,11 +44,11 @@ h1 {
   padding: 2rem;
   text-align: center;
   display: grid;
-  grid-gap: 2rem;
+  grid-gap: 1rem;
 }
 
 .logo {
-  height: 6em;
+  height: 10em;
   padding: 1.5em;
   will-change: filter;
   justify-self: center;
