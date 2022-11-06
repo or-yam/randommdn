@@ -42,3 +42,6 @@ export const getLinkMetaData = async (link: string): Promise<LinkMetaData> => {
     return { tag: "", title: "", description: "", url: link };
   }
 };
+
+// TODO Filter deprecated class names =>  "notecard", "deprecated"
+//TODO if no meta description get it from html document first <p> tag
