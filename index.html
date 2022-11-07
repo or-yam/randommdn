@@ -4,17 +4,18 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="generates a random link from the MDN Web documentation" />
     <title>Random MDN</title>
   </head>
   <body>
     <div id="app">
       <h1>Random MDN</h1>
-      <img class="logo" src="/logo.png" alt="mdn logo with dice" />
+      <img class="logo" src="/logo.png" alt="mdn logo with dice" height="200" />
       <button id="btn">Get Random Topic</button>
       <div style="display: none" id="results">
         <a id="link" target="_blank" rel="noreferrer" href=""></a>
         <p id="description"></p>
-        <h3 id="tag"></h3>
+        <h2 id="tag"></h2>
       </div>
 
       <div style="display: none" id="loader" class="lds-ring">
@@ -23,6 +24,8 @@
         <div></div>
         <div></div>
       </div>
+
+      <footer><a href="https://github.com/or-yam/randommdn">Repository on Github</a></footer>
     </div>
 
     <script type="module" src="/src/main.ts"></script>

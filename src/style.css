@@ -38,6 +38,19 @@ h1 {
   line-height: 1.1;
 }
 
+footer {
+  justify-self: left;
+}
+
+footer a {
+  font-size: medium;
+  color: #f9f9f9;
+}
+
+footer a:hover {
+  color: #8cb4ff;
+}
+
 #app {
   width: 100%;
   margin: 0 auto;
