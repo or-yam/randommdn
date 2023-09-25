@@ -1,5 +1,4 @@
 import axios from "axios";
-import { ungzip } from "node-gzip";
 
 const BASE_URL = "https://developer.mozilla.org";
 const SITEMAP_URL = `${BASE_URL}/sitemaps/en-US/sitemap.xml.gz`;
@@ -11,8 +10,8 @@ const SECTION_REGEX = /Web\/(.*?)\//;
 
 export const getSitemapLinks = async (): Promise<string[]> => {
   try {
-    const { data: sitemap } = await axios.get<ArrayBuffer>(SITEMAP_URL, { responseType: "arraybuffer" });
-    const sitemapArray = (await ungzip(sitemap)).toString().split("\n");
+    const { data: sitemap } = await axios.get<XMLDocument>(SITEMAP_URL);
+    const sitemapArray: string[] = sitemap.toString().split("\n");
     const webDocsLinks = sitemapArray
       .filter((link) => LINK_REGEX.test(link))
       .map((link) => link.replace("<url><loc>", "").split("</loc>")[0])
