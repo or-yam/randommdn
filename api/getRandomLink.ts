@@ -12,6 +12,7 @@ const SECTION_REGEX = /Web\/(.*?)\//;
 export const getSitemapLinks = async (): Promise<string[]> => {
   try {
     const { data: sitemap } = await axios.get<XMLDocument>(SITEMAP_URL);
+    console.log({ sitemap });
     const sitemapArray: string[] = sitemap.toString().split("\n");
     const webDocsLinks = sitemapArray
       .filter((link) => LINK_REGEX.test(link))
