@@ -10,10 +10,8 @@
     "serverless-dev": "vercel dev"
   },
   "devDependencies": {
-    "@types/node": "^20.6.4",
-    "@types/node-gzip": "^1.1.1",
+    "@types/node": "^20.7.0",
     "@vercel/node": "^3.0.6",
-    "axios": "^1.5.0",
     "eslint": "^8.50.0",
     "playwright": "^1.38.1",
     "typescript": "^5.2.2",

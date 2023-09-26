@@ -1,4 +1,3 @@
-import axios from "axios";
 import { LinkMetaData } from "../scraper/types";
 import scrapeData from "./data.json";
 import { replaceXmlSpecialChars } from "./replaceSpecialChars";
@@ -21,7 +20,7 @@ const loaderElement = document.getElementById("loader")! as HTMLDivElement;
 
 const getRandomLink = async (): Promise<LinkMetaData> => {
   try {
-    const linkMetaData = (await axios.get<LinkMetaData>("/api/getRandomLink")).data;
+    const linkMetaData: LinkMetaData = await fetch("/api/getRandomLink").then((res) => res.json());
     return linkMetaData;
   } catch (error) {
     console.log("Retrieved data from scraped json", error);
