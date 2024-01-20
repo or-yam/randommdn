@@ -16,7 +16,7 @@
     "playwright": "^1.38.1",
     "typescript": "^5.2.2",
     "vercel": "^32.3.1",
-    "vite": "^4.4.9"
+    "vite": "^4.5.2"
   },
   "eslintConfig": {
     "extends": [
