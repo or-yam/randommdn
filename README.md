@@ -1,7 +1,7 @@
 # Random MDN
 
 <center>
-<img alt="logo" src="logo.png" width="100" height="100"/>
+<img alt="logo" src="https://raw.githubusercontent.com/or-yam/randommdn/main/logo.png" width="100" height="100"/>
 </center>
 
 ## Web app that generates a random link from the [MDN Web documentation]("https://developer.mozilla.org/en-US/")
@@ -18,7 +18,7 @@
 
 The app generated using [Vite](https://vitejs.dev/) with [Typescript](https://www.typescriptlang.org/) and uses [Vercel](https://vercel.com/docs/concepts/functions/serverless-functions) serverless functions to fetch and filter MDN sitemap file.
 
-<img alt="system-design" src="design.png" />
+<img alt="system-design" src="https://raw.githubusercontent.com/or-yam/randommdn/main/design.png" />
 
 - For generating the Json file I used [Playwright](https://playwright.dev/) to scrape MDN's Javascript references page
 
