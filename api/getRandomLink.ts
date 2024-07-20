@@ -5,7 +5,7 @@ const SITEMAP_URL = `${BASE_URL}/sitemaps/en-us/sitemap.xml.gz`;
 const WEB_PATH = `${BASE_URL}/en-US/docs/Web`;
 const LINK_REGEX = /<loc>(.*?)<\/loc>/g;
 const TITLE_REGEX = /<h1>(.*?)<\/h1>/i;
-const DESCRIPTION_REGEX = /<meta name="description" content="(.*?)"\/>/i;
+const DESCRIPTION_REGEX = /<meta name="description" content="([\s\S]*?)"\/>/i;
 const SECTION_REGEX = /Web\/(.*?)\//;
 
 export const getSitemapLinks = async (): Promise<string[]> => {
@@ -30,6 +30,7 @@ interface LinkMetaData {
   description: string;
   url: string;
 }
+
 export const getLinkMetaData = async (link: string): Promise<LinkMetaData> => {
   try {
     const tag = link.match(SECTION_REGEX)?.[1] || "";
