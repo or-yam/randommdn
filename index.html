@@ -10,15 +10,18 @@
     <title>Random MDN</title>
   </head>
   <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
     <div id="app">
-      <h1>Random MDN</h1>
+      <h1 id="main-content">Random MDN</h1>
       <img class="logo" src="/logo.png" alt="mdn logo with dice" height="200" />
-      <button id="btn">Get Random Topic</button>
-      <div style="display: none" id="results">
-        <a id="link" target="_blank" rel="noreferrer" href=""></a>
-        <p id="description"></p>
-        <h2 id="tag"></h2>
+      <button id="btn" aria-describedby="btn-description">Get Random Topic</button>
+      <div id="btn-description" class="sr-only">Click to get a random MDN Web documentation topic</div>
+      <div style="display: none" id="results" aria-live="polite" aria-atomic="true">
+        <a id="link" target="_blank" rel="noreferrer" href="" aria-label="Open MDN documentation page"></a>
+        <p id="description" aria-label="Topic description"></p>
+        <h2 id="tag" aria-label="Documentation category"></h2>
       </div>
+      <div id="sr-announcements" aria-live="polite" aria-atomic="true" class="sr-only"></div>
 
       <div style="display: none" id="loader" class="lds-ring">
         <div></div>
