@@ -12,11 +12,10 @@ export const getSitemapLinks = async (): Promise<string[]> => {
   try {
     const response = await fetch(SITEMAP_URL, { headers: { "Accept-Encoding": "gzip" } });
     const sitemap = await response.text();
-    const sitemapArray: string[] = sitemap.toString().split("\n");
-    const webDocsLinks = sitemapArray
-      .filter((link) => LINK_REGEX.test(link))
-      .map((link) => link.replace("<url><loc>", "").split("</loc>")[0])
-      .filter((link) => link.startsWith(WEB_PATH));
+    const allMatches = Array.from(sitemap.matchAll(LINK_REGEX));
+    const webDocsLinks = allMatches.map((match) => match[1]).filter((url) => url.startsWith(WEB_PATH));
+
+    console.log(`Found ${webDocsLinks.length} Web docs links`);
     return webDocsLinks;
   } catch (error) {
     console.log(error);
