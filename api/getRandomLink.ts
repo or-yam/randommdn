@@ -27,12 +27,12 @@ export const getSitemapLinks = async (): Promise<string[]> => {
 	}
 };
 
-interface LinkMetaData {
+type LinkMetaData = {
 	tag: string;
 	title: string;
 	description: string;
 	url: string;
-}
+};
 
 export const getLinkMetaData = async (link: string): Promise<LinkMetaData> => {
 	try {
@@ -56,14 +56,39 @@ export const getLinkMetaData = async (link: string): Promise<LinkMetaData> => {
 // TODO Filter deprecated class names =>  "notecard", "deprecated"
 //TODO if no meta description get it from html document first <p> tag
 
-export default async (_request: VercelRequest, response: VercelResponse) => {
+export default async (request: VercelRequest, response: VercelResponse) => {
 	try {
 		const sitemapLinks = await getSitemapLinks();
+
 		if (!sitemapLinks.length) {
+			console.warn("No links found in sitemap");
 			return response.status(500).send("Failed to fetch links");
 		}
+
+		const { tags } = request.query;
+		let filteredLinks = sitemapLinks;
+
+		if (tags) {
+			const tagList = String(tags)
+				.split(",")
+				.map((tag) => tag.trim().toUpperCase())
+				.filter(Boolean);
+			if (tagList.length > 0) {
+				filteredLinks = sitemapLinks.filter((link) => {
+					const linkTag = link.match(SECTION_REGEX)?.[1]?.toUpperCase() || "";
+					const normalizedLinkTag = linkTag === "API" ? "WEB API" : linkTag;
+					return tagList.includes(normalizedLinkTag);
+				});
+
+				if (!filteredLinks.length) {
+					console.warn(`No links found for tags: ${tags}`);
+					return response.status(404).send(`No links found for tags: ${tags}`);
+				}
+			}
+		}
+
 		const randomLink =
-			sitemapLinks[Math.floor(Math.random() * sitemapLinks.length)];
+			filteredLinks[Math.floor(Math.random() * filteredLinks.length)];
 		const linkMetaData = await getLinkMetaData(randomLink);
 		return response.status(200).send(linkMetaData);
 	} catch (_error) {

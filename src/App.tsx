@@ -1,6 +1,6 @@
-import { DicesIcon, MoonIcon, SunIcon } from "lucide-react";
+import { DicesIcon } from "lucide-react";
 import { AnimatePresence, motion } from "motion/react";
-import { useTheme } from "@/components/theme-provider";
+import { useState } from "react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import {
@@ -10,51 +10,71 @@ import {
 	CardHeader,
 	CardTitle,
 } from "@/components/ui/card";
-import { Skeleton } from "@/components/ui/skeleton";
 import { replaceXmlSpecialChars } from "@/lib/utils";
 import { useGetRandomLink } from "@/queries/useGetRandomLink";
+import { CardError } from "./components/card-error";
+import { CardLoading } from "./components/card-loading";
+import { Header } from "./components/header";
+import { TagBadge } from "./components/tag-badge";
+import { TagSelect } from "./components/tag-select";
+import { ThemeToggleButton } from "./components/theme-toggle-button";
+import { TAG_COLORS, type Tags } from "./lib/tags";
 
 function App() {
+	const [selectedTags, setSelectedTags] = useState<Tags[]>([]);
+	const [appliedTags, setAppliedTags] = useState<Tags[]>([]);
+	const [open, setOpen] = useState(false);
 	const {
 		data: randomLinkData,
 		isFetching,
 		error,
 		refetch,
-	} = useGetRandomLink();
-	const { theme, setTheme } = useTheme();
+	} = useGetRandomLink(appliedTags.length > 0 ? appliedTags : undefined);
+
+	const handleOpenSelectChange = (newOpen: boolean) => {
+		setOpen(newOpen);
+		if (newOpen) {
+			setSelectedTags([...appliedTags]);
+		} else {
+			setAppliedTags([...selectedTags]);
+		}
+	};
 
 	return (
 		<main className="min-h-screen bg-background text-foreground p-4 flex flex-col items-center justify-center">
-			<div className="text-center mb-8 flex flex-col items-center">
-				<motion.img
-					src="/logo.png"
-					alt="Random MDN Logo"
-					className="w-16 h-16 mb-4"
-					initial={{ scale: 0.8, opacity: 0 }}
-					animate={{ scale: 1, opacity: 1 }}
-					transition={{ duration: 0.5, ease: "easeOut" }}
-				/>
-				<motion.h1
-					className="text-3xl font-bold tracking-tight"
-					initial={{ y: 20, opacity: 0 }}
-					animate={{ y: 0, opacity: 1 }}
-					transition={{ duration: 0.5, delay: 0.2, ease: "easeOut" }}
-				>
-					Random MDN
-				</motion.h1>
-			</div>
-			<Button
-				variant="ghost"
-				size="icon"
-				className="absolute top-4 right-4"
-				onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+			<Header />
+
+			<motion.div
+				className="w-full max-w-md mb-6"
+				initial={{ y: 20, opacity: 0 }}
+				animate={{ y: 0, opacity: 1 }}
+				transition={{ duration: 0.5, delay: 0.3, ease: "easeOut" }}
 			>
-				{theme === "dark" ? (
-					<SunIcon className="h-5 w-5" />
-				) : (
-					<MoonIcon className="h-5 w-5" />
+				<TagSelect
+					open={open}
+					handleOpenSelectChange={handleOpenSelectChange}
+					appliedTags={appliedTags}
+					selectedTags={selectedTags}
+					setSelectedTags={setSelectedTags}
+				/>
+				{appliedTags.length > 0 && (
+					<div className="flex flex-wrap gap-1 mt-2">
+						{appliedTags.map((tagValue) => (
+							<TagBadge
+								key={tagValue}
+								tagValue={tagValue}
+								onClick={() => {
+									const newTags = appliedTags.filter((t) => t !== tagValue);
+									setAppliedTags(newTags);
+									setSelectedTags(newTags);
+								}}
+							/>
+						))}
+					</div>
 				)}
-			</Button>
+			</motion.div>
+
+			<ThemeToggleButton />
 
 			<AnimatePresence mode="wait">
 				<motion.div
@@ -67,29 +87,32 @@ function App() {
 				>
 					<Card className="border-2 shadow-lg">
 						{isFetching ? (
-							<>
-								<CardHeader>
-									<Skeleton className="h-4 w-32" />
-									<Skeleton className="h-8 w-full mt-2" />
-								</CardHeader>
-								<CardContent>
-									<Skeleton className="h-20 w-full" />
-								</CardContent>
-							</>
+							<CardLoading />
 						) : error ? (
-							<CardContent className="text-center py-8">
-								<p className="text-destructive mb-4">Failed to load content</p>
-								<Button variant="outline" onClick={() => refetch()}>
-									Try again
-								</Button>
-							</CardContent>
+							<CardError onRetryClick={() => refetch()} />
 						) : (
 							<>
 								<CardHeader>
 									<div className="flex items-center justify-between">
-										<Badge variant="outline" className="mb-2">
-											{randomLinkData?.tag}
-										</Badge>
+										{randomLinkData?.tag && (
+											<Badge
+												className={`mb-2 text-xs ${
+													TAG_COLORS[
+														randomLinkData.tag as keyof typeof TAG_COLORS
+													]?.bg || "bg-gray-100"
+												} ${
+													TAG_COLORS[
+														randomLinkData.tag as keyof typeof TAG_COLORS
+													]?.text || "text-gray-800"
+												} ${
+													TAG_COLORS[
+														randomLinkData.tag as keyof typeof TAG_COLORS
+													]?.border || "border-gray-200"
+												} border`}
+											>
+												{randomLinkData.tag}
+											</Badge>
+										)}
 									</div>
 									<CardTitle className="text-xl font-bold break-words hyphens-auto overflow-hidden">
 										{replaceXmlSpecialChars(randomLinkData?.title)}
