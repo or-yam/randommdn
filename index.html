@@ -1,38 +1,37 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/logo.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="generates a random link from the MDN Web documentation" />
-    <meta property="og:title" content="Random MDN" />
-    <meta property="og:description" content="generates a random link from the MDN Web documentation" />
-    <title>Random MDN</title>
+    <link rel="icon" type="image/png" href="/logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Random MDN - Discover MDN Documentation</title>
+
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Random MDN - Discover MDN Documentation">
+    <meta name="description" content="Discover random MDN Web Docs articles to expand your web development knowledge">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Random MDN - Discover MDN Documentation">
+    <meta property="og:description" content="Discover random MDN Web Docs articles to expand your web development knowledge">
+    <meta property="og:image" content="/logo.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Random MDN - Discover MDN Documentation">
+    <meta name="twitter:description" content="Discover random MDN Web Docs articles to expand your web development knowledge">
+    <meta name="twitter:image" content="/logo.png">
+
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#3451b2">
+
+    <!-- PWA capable -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
   </head>
   <body>
-    <a href="#main-content" class="skip-link">Skip to main content</a>
-    <div id="app">
-      <h1 id="main-content">Random MDN</h1>
-      <img class="logo" src="/logo.png" alt="mdn logo with dice" height="200" />
-      <button id="btn" aria-describedby="btn-description">Get Random Topic</button>
-      <div id="btn-description" class="sr-only">Click to get a random MDN Web documentation topic</div>
-      <div style="display: none" id="results" aria-live="polite" aria-atomic="true">
-        <a id="link" target="_blank" rel="noreferrer" href="" aria-label="Open MDN documentation page"></a>
-        <p id="description" aria-label="Topic description"></p>
-        <h2 id="tag" aria-label="Documentation category"></h2>
-      </div>
-      <div id="sr-announcements" aria-live="polite" aria-atomic="true" class="sr-only"></div>
-
-      <div style="display: none" id="loader" class="lds-ring">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-
-      <footer><a href="https://github.com/or-yam/randommdn">Repository on Github</a></footer>
-    </div>
-
-    <script type="module" src="/src/main.ts"></script>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

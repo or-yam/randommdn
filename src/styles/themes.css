@@ -1,0 +1,62 @@
+@layer base {
+	:root {
+		--background: #ffffff;
+		--foreground: #0f172a;
+
+		--card: #ffffff;
+		--card-foreground: #0f172a;
+
+		--primary: #3451b2;
+		--primary-foreground: #ffffff;
+
+		--secondary: #f3f4f6;
+		--secondary-foreground: #1f2937;
+
+		--muted: #f3f4f6;
+		--muted-foreground: #6b7280;
+
+		--accent: rgb(152, 177, 255);
+		--accent-foreground: #1f2937;
+
+		--radius: 0.75rem;
+	}
+
+	[data-theme="dark"] {
+		--background: #0f172a;
+		--foreground: #f8fafc;
+
+		--card: #1e293b;
+		--card-foreground: #f8fafc;
+
+		--primary: #818cf8;
+		--primary-foreground: #0f172a;
+
+		--secondary: #1e293b;
+		--secondary-foreground: #f8fafc;
+
+		--muted: #1e293b;
+		--muted-foreground: #94a3b8;
+
+		--accent: rgb(30, 58, 138);
+		--accent-foreground: #f8fafc;
+	}
+}
+
+/* Smooth transitions for theme changes */
+:root {
+	--transition-duration: 0.3s;
+}
+
+:root * {
+	transition:
+		background-color var(--transition-duration) ease,
+		border-color var(--transition-duration) ease,
+		color var(--transition-duration) ease,
+		box-shadow var(--transition-duration) ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	:root * {
+		transition: none !important;
+	}
+}
