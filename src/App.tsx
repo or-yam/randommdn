@@ -92,7 +92,7 @@ function App() {
 										</Badge>
 									</div>
 									<CardTitle className="text-xl font-bold break-words hyphens-auto overflow-hidden">
-										{randomLinkData?.title}
+										{replaceXmlSpecialChars(randomLinkData?.title)}
 									</CardTitle>
 								</CardHeader>
 								<CardContent>
