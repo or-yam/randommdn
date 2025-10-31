@@ -6,9 +6,13 @@
 	"scripts": {
 		"dev": "vite",
 		"serverless-dev": "vercel dev",
-		"build": "tsc -b && vite build",
+		"build": "node scripts/ensure-cache.ts && tsc -b && vite build",
+		"build:force-cache": "FORCE_CACHE_REGEN=true npm run build",
+		"build:skip-cache": "SKIP_CACHE_CHECK=true npm run build",
 		"preview": "vite preview",
-		"lint": "biome check --write"
+		"lint": "biome check --write",
+		"generate-cache": "node scripts/generate-cache.ts",
+		"validate-cache": "node scripts/validate-cache.ts"
 	},
 	"dependencies": {
 		"@radix-ui/react-checkbox": "^1.3.3",
